@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+               "http://www.w3.org/TR/html4/strict.dtd">
+<HTML lang="en">
+<HEAD>
+  <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <LINK href="http://www.complang.tuwien.ac.at/complang.css" rel="stylesheet" type="text/css">
+  <LINK href="http://www.complang.tuwien.ac.at/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <LINK href="http://www.complang.tuwien.ac.at/lkovacs/" rel="Start" type="text/html">
+  <TITLE>Vinter: A Vampire-Based Tool for Interpolation</TITLE>
+</HEAD>
+
+<BODY id="top">
+<DIV class="logo">
+<A href="http://www.complang.tuwien.ac.at/" title="The Complang Group">
+  <IMG class="logo" alt="Computer Languages" src="http://www.complang.tuwien.ac.at/logo">
+</A>
+</DIV>
+
+<DIV>
+<P class="rightquote">
+  Institute for Computer Languages<BR>
+   Compilers and Languages Group
+</P>
+<H1>Vinter: A Vampire-Based Tool for Interpolation</H1>
+
+
+
+<p>
+      Vinter is a Vampire-based tool for interpolation,
+      whose aim is to generate minimal interpolants.
+    </p>
+    <p>
+      Vinter translates arbitraty proofs into interpolating ones (local proofs), extracts interpolants from local
+proofs, and minimises interpolants using various measures, such as for example the size of the interpolants or the number of quantifiers used in the interpolants.
+    </p>
+    <p>
+    Vinter takes an input problem written in either SMT-LIB or TPTP syntax.
+    Proofs are found using either Z3 or Vampire, solving pseudo-boolean optimisation is delegated to Yices,
+    while localising proofs and generating minimal interpolants is done by Vampire.
+</p>
+
+    <h2>Source Code</h2>
+    <p>
+      The latest release of Vinter
+      is: <a href="vinter-2012-02-01.tar.gz">vinter-2012-02-01.tar.gz</a>
+    </p>
+  <p> Note: To run Vinter, you also need to have the Z3 and Yices executables.</p>
+
+    <h2>Benchmarks</h2>
+    <p>
+      See the <a href="vinter-benchmarks.tar.gz">examples</a>
+      to try Vinter.
+    </p>
+
+    <h2>Publications</h2>
+    <p>
+      Vinter is based
+      on the technique of <a href="pub/POPL12_Kovacs.pdf">playing in the grey area of proofs</a>
+      to find interpolants minimal with respect to various measures.
+    </p>
+
+
+
+</DIV>
+
+<DIV class="leftmenu">
+<DL class="leftbuttons">
+  <DT><A href="http://www.complang.tuwien.ac.at/" title="Die Complang-Gruppe">Complang</A>
+  <DT><A href="http://www.complang.tuwien.ac.at/lkovacs/" title="Laura Kov&aacute;cs">Laura&nbsp;Kov&aacute;cs</A>
+  <DT>&nbsp;&nbsp;&nbsp;<A href="ARV" title="Automated Reasoning and Program Verification (SS 2015)">ARV</A>
+  <DT>&nbsp;&nbsp;&nbsp;<A href="ATCS" title="Advanced Topics in Theoretical Computer Science (Fall 2012)">ATCS</A>
+  <DT>&nbsp;&nbsp;&nbsp;<A href="Student-Projects" title="Formal Methods for Automated Software Verification">Student-Projects</A>
+  <DT>&nbsp;&nbsp;&nbsp;<STRONG title="Short Name of Current Page">Vinter</STRONG>
+  <DT>&nbsp;&nbsp;&nbsp;<A href="Cade-Vampire-Tutorial" title="First-order theorem proving and Vampire">Cade-Vampire-Tutorial</A>
+  <DT>&nbsp;&nbsp;&nbsp;<A href="SYNASC-Tutorial" title="Symbolic Computation and Theorem Proving for Verified Software">SYNASC-Tutorial</A>
+  <DT>&nbsp;&nbsp;&nbsp;<A href="CATPVS" title="CATPVS: Computer Algebra and Theorem Proving for Verified Software">CATPVS</A>
+</DL>
+</DIV>
+
+<DIV class="rightmenu">
+<DL class="rightbuttons">
+  <DT><A href="sitemap-e" title="Overview of these Pages">Sitemap</A>
+</DL>
+</DIV>
+
+<DIV class="fi">
+<A href="http://www.informatik.tuwien.ac.at/english/" title="Faculty of Informatics">
+  <IMG class="fi" alt="Faculty of Informatics" src="http://www.complang.tuwien.ac.at/fi">
+</A>
+</DIV>
+
+<DIV class="tu">
+<A href="http://www.tuwien.ac.at/tuwien_home/EN/" title="Vienna University of Technology">
+  <IMG class="tu" alt="Vienna University of Technology" src="http://www.complang.tuwien.ac.at/tu">
+</A>
+</DIV>
+
+<ADDRESS>
+  <A href="#top" title="Top of this Page">top</A> |
+  <A href="http://validator.w3.org/check/referer" title="Syntactic Correctness Check of this Page">HTML 4.01</A> |
+  last update: 2015-02-20 (Webmaster)
+</ADDRESS>
+</BODY>
+</HTML>

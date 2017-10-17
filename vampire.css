@@ -1,0 +1,165 @@
+/* My home page style sheet
+ * (c) 2009-2013 Andrei Voronkov
+ */
+
+body {
+  font-size: 11pt; 
+  font-family: Verdana, Arial, Helvetica;
+  padding: 0px;
+  margin: 0px;
+  border-width: 0px;
+  border-top: solid #c4d8ff 5pt;
+  border-right: solid #c4d8ff 6pt;
+  counter-reset: pb;
+}
+
+h1 {
+  padding: 12pt 0pt 12pt 0pt;
+  margin: 0pt;
+  border: 0pt;
+  font-size:18pt;
+  font-weight:normal;
+  text-align:center
+}
+h2 {
+  margin: 6pt 0px 6pt 0px;
+  font-size:16pt;
+  font-weight:normal;
+}
+
+h3 {
+  font-size:14pt;
+  font-weight:normal;
+  margin: 6pt 0px 6pt 0px;
+}
+
+h4 {
+  margin: 6pt 0px 6pt 0px;
+}
+
+p {
+  margin: 2pt 0pt 1pt 1pt;
+}
+
+.code { font-size:10pt; }
+
+.codebox {
+  border-top: #BBBBBB solid 1px;
+  border-bottom: #BBBBBB solid 1px;
+  margin:5pt 0pt 5pt 0pt;
+  background : #F0F8FF;
+}
+.replybox {
+  border-top: #BBBBBB solid 1px;
+  border-bottom: #BBBBBB solid 1px;
+  margin:5pt 0pt 5pt 0pt;
+/*  background : #C3FDB8; */
+  background : #FFFFE8;
+}
+
+.comment { 
+  color:red
+}
+
+.content {
+  vertical-align:top;
+  margin: 0pt;
+  padding: 0pt 0pt 1000pt 2pt;
+  border: 0pt;
+}
+
+.publist {
+  margin: 5pt 0pt 5pt 0pt;
+}
+
+li.pub { 
+  list-style-type: none;
+  margin: 1pt 0pt 1pt 12pt;
+}
+
+li.pub:before {
+  counter-increment: pb;
+  content : "[" counter(pb) "] ";
+  display : inline;
+}
+
+.menu {
+  vertical-align:top;
+  margin: 0pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color:#c4d8ff; /* #f4cb45; */
+  height:100%;
+  font-size:14pt;
+  padding: 8pt 3pt 1000pt 2pt;
+  border: 0pt;
+}
+
+.menu div {
+  padding: 6pt 4pt 6pt 4pt
+}
+
+.menu div.subitem {
+  padding: 0pt 8pt 0pt 12pt;
+  font-size: 11pt;
+  white-space: nowrap;
+}
+
+.menu a:link {
+  color:black;
+}
+.menu a:visited {
+  color:black;
+}
+
+.menu a:hover {
+  color:red;
+}
+
+.menu div.active {
+  background-color:#f4cb45;
+}
+
+.textPopup {
+  background-color: #f2eda6;
+  visibility:hidden;
+  font-weight:bold;
+  padding:4px 10px 4px 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.headline {
+  font-weight:bold;
+  font-family:sans-serif;
+}
+.headlineFirstLetter {
+  font-family:sans-serif;
+  color:red;
+  font-size:18pt;
+}
+
+img { border-style:none; }
+
+.date {
+  font-size:10pt;
+  font-family:sans-serif;
+}
+
+.red {
+  color:red;
+}
+.blue {
+  color:blue;
+}
+
+/* publications */
+.ptitle a:link {font-style: italic;color:#347235}
+.ptitle a:visited {font-style: italic;color:#347235}
+.conf a:link {font-style: italic;color:#736AFF}
+.conf a:visited {font-style: italic;color:#736AFF}
+
+/* math display */
+.math {color:navy;font-weight:bold}
+/* definitions, coral color */
+.def {color:#F76541}
+
+
