@@ -21,7 +21,7 @@
 
 <h4>Basic Usage</h4>
 
-<p>The most basic usage of Vampire is to save your problem in <a href="www.cs.miami.edu/~tptp/">TPTP</a> format and run<p>
+<p>The most basic usage of Vampire is to save your problem in <a href="www.cs.miami.edu/~tptp/">TPTP</a> format and run
 
 <pre>
 <code>vampire problem.p </code>
@@ -33,11 +33,26 @@ as this will run Vampire in <i>default</i> mode with a 60 second time-limit. How
 <code>vampire --mode portfolio -t 300 problem.p </code>
 </pre>
 
-this will run for 300 seconds trying lots of different strategies.
+this will run for 300 seconds trying lots of different strategies. This will perform much better than default mode as it will try combinations of options, that are turned off by default, which may work well for your problem. If you think the problem is <i>satisfiable</i> then you can also run 
+<pre>
+<code>vampire --mode casc_sat -t 300 problem.p </code>
+</pre> 
+which will use a set of strategies suited to satisfiable problems (as entered into the most recent <a href="www.cs.miami.edu/~tptp/CASC/">CASC</a> competition.</p>
+
+<p>
+Finally, if your problem is in <a href="http://smtlib.cs.uiowa.edu/">SMT-LIB</a> format you can run
+<pre>
+<code>vampire --mode portfolio -t 300 --input_syntax smtlib2 problem.smt2 </code>
+</pre>
+to specify a different input language, or
+<pre>
+<code>vampire --mode smtcomp problem.p </code>
+</pre>
+to use the latest <a href="http://smtcomp.sourceforge.net/">SMT-COMP</a> schedule, which automatically selects the appropriate input language.
 
 <h4>More Advanced Usage</h4>
 
-For more advanced usage we recommend looking at a number of tutorials that have been given on Vampire.
+For more advanced usage we recommend looking at a number of tutorials that have been given on Vampire. (Links to appear soon).
 
 </td></tr></table>
 </body>
