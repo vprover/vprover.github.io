@@ -41,6 +41,13 @@ p {
   margin: 2pt 0pt 1pt 1pt;
 }
 
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+
 .code { font-size:10pt; }
 
 .codebox {

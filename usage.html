@@ -1,0 +1,44 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Usage</title>
+<link href="vampire.css" rel="StyleSheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table style="border-collapse:collapse"><tr>
+<script src="scripts/nav.js"></script>
+<td class="content"> <h1>Usage</h1> 
+
+<p>This page gives information on how to use Vampire. See <a href="download.html">Download</a> for how to download Vampire.</p>
+
+<h4>Manual</h4>
+<p>Vampire manual is not finished yet. While there is no manual, you can
+          use the preliminary version of our <a href="cav2013.pdf">CAV 2013 paper</a>, which describes
+          main features of Vampire and some of its options.</p>
+
+<h4>Basic Usage</h4>
+
+<p>The most basic usage of Vampire is to save your problem in <a href="www.cs.miami.edu/~tptp/">TPTP</a> format and run<p>
+
+<pre>
+<code>vampire problem.p </code>
+</pre>
+
+as this will run Vampire in <i>default</i> mode with a 60 second time-limit. However, a better way to run Vampire is in portfolio mode i.e.
+
+<pre>
+<code>vampire --mode portfolio -t 300 problem.p </code>
+</pre>
+
+this will run for 300 seconds trying lots of different strategies.
+
+<h4>More Advanced Usage</h4>
+
+For more advanced usage we recommend looking at a number of tutorials that have been given on Vampire.
+
+</td></tr></table>
+</body>
+</html>

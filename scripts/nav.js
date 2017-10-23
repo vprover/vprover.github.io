@@ -1,5 +1,5 @@
-var links = new Array ("index", "download","license","team", "pubs","history","trophies","projects"); 
-var links_text = new Array ("Vampire", "Download","License","Team", "Publications","History","Trophies","Projects"); 
+var links = new Array ("index", "download","license","usage","team", "pubs","history","trophies","projects"); 
+var links_text = new Array ("Vampire", "Download","License","Usage","Team", "Publications","History","Trophies","Projects"); 
 
 
 /* Resolve the location */
