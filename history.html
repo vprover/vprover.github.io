@@ -2,10 +2,11 @@
 title: History
 layout: default
 ---
+{% include authors.html %}
 
 <article>
 <p>
-Vampire had several predecessors implemented by <a href="http://www.voronkov.com/">Andrei Voronkov</a> in the International Laboratory of Intelligent Systems in Novosibirsk from 1990.
+Vampire had several predecessors implemented by {{ voronkov }} in the International Laboratory of Intelligent Systems in Novosibirsk from 1990.
 The first predecessor that was actually able to prove something appeared in 1989 and called Drakosha.
 It has been implemented in LISP.
 </p>
@@ -17,26 +18,26 @@ implemented in C++.
 
 <ol>
  <li>
-The first incarnation was born in Uppsala University in 1994 after <a href="http://www.voronkov.com/">Andrei Voronkov</a>'s visit to the Bull Research Lab.
+The first incarnation was born in Uppsala University in 1994 after {{ voronkov }}'s visit to the Bull Research Lab.
 This implementation was used for the first experiments with code trees and a pre-CASC competition with the SETHEO theorem prover in Munich.
  <li>
 The second re-incarnation appeared in Uppsala University and then wandered to the University of Manchester.
-It has been developed from the first incarnation (that was eventually completely rewritten) by <a href="http://www.voronkov.com/">Andrei Voronkov</a> and Alexandre Riazanov in 1998.
-From 2005 it has been developed and maintained by <a href="http://www.voronkov.com/">Andrei Voronkov</a>.
+It has been developed from the first incarnation (that was eventually completely rewritten) by {{ voronkov }} and Alexandre Riazanov in 1998.
+From 2005 it has been developed and maintained by {{ voronkov }}.
 This incarnation has been winning the CASC competitions since 1999.
  <li>
 The work on the third re-incarnation of Vampire started in 2008.
-It has been developed by <a href="http://www.voronkov.com/">Andrei Voronkov</a> and <a href="http://www.cs.manchester.ac.uk/~hoderk/">Krystof Hoder</a>.
+It has been developed by {{ voronkov }} and {{ hoder }}.
 This version used some code and algorithms for preprocessing from the second re-incarnation but re-implemented the resolution and superposition engine from scratch.
 The version used in CASC 2009 was actually a combination of the second and the third reincarnation glued by Perl scripts called Dracula and Drakosha.
- <li>Since <a href="http://www.cs.manchester.ac.uk/~hoderk/">Krystof Hoder</a> decided to leave academia and help <a href="https://plus.google.com/+LarryPage/posts">Larry Page</a> and <a href="https://plus.google.com/+SergeyBrin/posts">Sergey Brin</a> to make more money, Vampire is waking up for its fourth reincarnation.
+ <li>Since {{ hoder }} decided to leave academia and help <a href="https://plus.google.com/+LarryPage/posts">Larry Page</a> and <a href="https://plus.google.com/+SergeyBrin/posts">Sergey Brin</a> to make more money, Vampire is waking up for its fourth reincarnation.
 Several people are working on it.
-A considerable amount of code was contributed by <a href="http://www.cse.chalmers.se/~laurako/">Laura Kovacs</a>, mainly in Vampire's program analysis, interpolation and symbol elimination parts.
+A considerable amount of code was contributed by {{ kovacs }}, mainly in Vampire's program analysis, interpolation and symbol elimination parts.
 </ol>
 
 <p>
 From 2014, the <a href="/team.html">current team</a> took over the active development of Vampire.
-Whilst the current version is labelled as the fourth reincarnation, much of the core still consists of code written by Krystof Hoder in the third incarnation.
+Whilst the current version is labelled as the fourth reincarnation, much of the core still consists of code written by {{ hoder }} in the third incarnation.
 </p>
 <aside>
  <img alt="Andrei Voronkov" src="/img/voronkov.jpg">
