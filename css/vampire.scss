@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "base";
+@import "config";
 @import "nav";
 @import "team";
 @import "pubs";
@@ -122,4 +122,14 @@ section h1, h3
 {
 	font-size: $h3-size;
 	margin-bottom: $para-margin;
+}
+
+// desktop-specific things below
+@media screen and (min-width: 1025px)
+{
+	main
+	{
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
 }

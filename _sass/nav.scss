@@ -1,8 +1,4 @@
-@import "base";
-
-$nav-burgersize: 36pt;
-$nav-fontsize: 24pt;
-$nav-padding: 10px;
+@import "config";
 
 nav
 {
@@ -44,4 +40,25 @@ nav a
 #nav-toggle:checked ~ a
 {
 	display: block;
+}
+
+@media screen and (min-width: 1025px)
+{
+	nav
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav label
+	{
+		display: none;
+	}
+
+	nav a
+	{
+		display: inline;
+		font-size: $nav-desktopsize;
+		text-transform: none;
+	}
 }
