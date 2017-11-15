@@ -1,0 +1,15 @@
+$mugshot-width: 200px;
+
+section.bio img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $mugshot-width;
+	border-radius: 50%;
+}
+
+section.bio p
+{
+	text-align: center;
+}

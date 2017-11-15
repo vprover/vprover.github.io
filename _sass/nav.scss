@@ -1,0 +1,47 @@
+@import "base";
+
+$nav-burgersize: 36pt;
+$nav-fontsize: 24pt;
+$nav-padding: 10px;
+
+nav
+{
+	background-color: $dark-color;
+	color: $light-color;
+}
+
+#nav-toggle
+{
+	display: none;
+}
+
+#nav-hamburger i
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: $nav-burgersize;
+	color: $highlight-color;
+}
+
+#nav-toggle:checked ~ #nav-hamburger i
+{
+	border: 2px solid $light-color;
+	border-radius: 10px;
+}
+
+nav a
+{
+	display: none;
+	color: $light-color;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	font-size: $nav-fontsize;
+	padding-top: $nav-padding;
+	padding-bottom: $nav-padding;
+}
+
+#nav-toggle:checked ~ a
+{
+	display: block;
+}
