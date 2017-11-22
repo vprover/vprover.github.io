@@ -1,0 +1,49 @@
+ol.pubs section h1
+{
+	text-align: left;
+}
+
+ol.pubs
+{
+	counter-reset: ref;
+}
+
+ol.pubs section > li
+{
+	list-style: none;
+	counter-increment: ref;
+	margin: 0;
+}
+
+ol.pubs section > li:before
+{
+	content: "[" counter(ref) "]";
+}
+
+ol.pubs ul
+{
+	display: inline;
+}
+
+ol.pubs ul li
+{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+
+ol.pubs ul li a:after
+{
+	content: ",";
+}
+
+ol.pubs ul li a:last-child:after
+{
+	content: ".";
+}
+
+ol.pubs cite:after
+{
+	content: ".";
+}

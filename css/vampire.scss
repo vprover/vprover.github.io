@@ -1,0 +1,135 @@
+---
+---
+
+@import "config";
+@import "nav";
+@import "team";
+@import "pubs";
+
+body
+{
+	background-color: $background-color;
+	font-family: $font;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+main
+{
+	margin-left: $page-margin;
+	margin-right: $page-margin;
+}
+
+a
+{
+	color: $highlight-color;
+}
+
+p
+{
+	padding-bottom: $para-margin;
+}
+
+ol, ul
+{
+	padding-bottom: $para-margin;
+}
+
+li
+{
+	margin-left: $list-indent;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: $para-margin;
+	font-size: $font-size;
+	table-layout: fixed;
+}
+
+thead
+{
+	padding-bottom: $table-padding;
+}
+
+td
+{
+	padding-left: $table-padding;
+	padding-right: $table-padding;
+}
+
+code
+{
+	display: block;
+	margin-top: $para-margin;
+	margin-bottom: $para-margin;
+	font-family: $code-font;
+	background-color: $dark-color;
+	color: $light-color;
+	padding: 20px;
+	padding-left: 40px;
+	text-indent: -20px;
+}
+
+img
+{
+	margin-bottom: $para-margin;
+}
+
+figure
+{
+	margin-bottom: $para-margin;
+}
+
+figure img
+{
+	display: block;
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption
+{
+	text-align: center;
+	font-style: italic;
+}
+
+h1, h2, h3
+{
+	line-height: normal;
+	text-align: center;
+}
+
+h1, h2
+{
+	margin: $title-margin;
+}
+
+h1
+{
+	font-size: $h1-size;
+}
+
+h2
+{
+	font-size: $h2-size;
+}
+
+section h1, h3
+{
+	font-size: $h3-size;
+	margin-bottom: $para-margin;
+}
+
+// desktop-specific things below
+@media screen and (min-width: 1025px)
+{
+	main
+	{
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+}
