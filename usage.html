@@ -11,7 +11,7 @@ See <a href="/download.html">Download</a> for how to download Vampire.
 <h2>Manual</h2>
 <p>
 Vampire manual is not finished yet.
-While there is no manual, you can use the preliminary version of our CAV 2013 paper, which describes main features of Vampire and some of its options.
+While there is no manual, you can use the <a href="http://www.cse.chalmers.se/~laurako/pub/CAV13_Kovacs.pdf">CAV 2013 tutorial paper</a>, which describes main features of Vampire and some of its options.
 </p>
 
 <h2>Basic Usage</h2>
@@ -42,7 +42,7 @@ which will use a set of strategies suited to satisfiable problems (as entered in
 <p>
 Finally, if your problem is in <a href="http://smtlib.cs.uiowa.edu/">SMT-LIB</a> format you can run
 <code>
-vampire --mode portfolio -t 300 --input_syntax smtlib2 problem.smt2 
+vampire --input_syntax smtlib2 problem.smt2 
 </code>
 to specify a different input language, or
 <code>
@@ -51,7 +51,19 @@ vampire --mode smtcomp problem.p
 to use the latest <a href="http://smtcomp.sourceforge.net/">SMT-COMP</a> schedule, which automatically selects the appropriate input language.
 </p>
 
-<h2>More Advanced Usage</h2>
+<p>
+Note that all of these competition modes are really shortcuts for other combinations e.g. casc mode is a shortcut for
+<code>
+vampire --mode portflio --schedule casc -t 300s
+</code>
+
+<h2>Options and More Advanced Usage</h2>
+<p>
+To see a full list of options with some explanations run
+<code>
+vampire --show_options on
+</code>
+if there is an option with an unsatisfactory explanation then please report it either via the Issues tab or directly to {{ reger }}.</p>
 <p>
 For more advanced usage we recommend looking at a number of tutorials that have been given on Vampire. For example, the recent <a href="https://github.com/vprover/ase17tutorial">ASE 2017 tutorial</a>.
 </p>
