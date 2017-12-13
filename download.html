@@ -14,7 +14,11 @@ See <a href="/usage.html">Usage</a> for how to use Vampire.
 <h1>Binaries</h1>
 <p>The binaries of the new Vampire can be downloaded and used under
          the terms of the <a href="licence.html">Vampire License</a>. 
-All binaries are statically linked:</p>
+All binaries are statically linked, which means that you should be able to run them out of the box.</p>
+
+<p>Currently we're only providing binaries for Linux as this is the easy case. For other platforms (e.g. Mac), the easiest route is often to compile from source (see below). We can provide Mac binaries but these can be OS X version specific due to linking issues - please contact {{ reger }} for any queries.</p>
+
+<p>We will usually provide each version with and without Z3 included as Z3 adds a lot to the size of the binary and is only useful in certain contexts. To be precise, if you are not reasoning with theories or want to make use of the most efficient finite model builder, then you can select the noz3 version. If there is an historic version that does not appear here that you want for whatever reason then please contact us.</p>
 <ul>
  <li>Linux
   <ul>
@@ -29,7 +33,10 @@ All binaries are statically linked:</p>
 <p>Please access the source via the <a href="https://github.com/vprover/vampire">GitHub</a> repository. 
          The source of the new Vampire is provided under
          the terms of the <a href="licence.html">Vampire License</a>. 
-         Here are some links to (stable) releases:
+
+<p>The README file should contain the necessary information for making. To build with Z3 you will need a statically linked Z3 binary. If you have any bug reports of feature requests then please use the <a href="https://github.com/vprover/vampire/issues">GitHub</a> functionality for this.</p>
+<p>
+         Here are some links to (stable) releases. <b>If you are going to use Vampire in experiments then please only use one of these stable versions and make sure you refer to the version</b> as this is the only way to guarantee reproducibility of your results.
   <ul>
            <li><a href="https://github.com/vprover/vampire/releases/tag/4.2.2">4.2.2</a>  
            <li><a href="https://github.com/vprover/vampire/releases/tag/casc2016">4.1 (CASC 2016)</a>
