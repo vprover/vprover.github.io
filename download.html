@@ -2,23 +2,36 @@
 title: Downloads
 layout: default
 ---
+{% include authors.html %}
 
 <p>
 This page gives information on how to download Vampire.
 See <a href="/usage.html">Usage</a> for how to use Vampire.
 </p>
 
-<p>We encourage users to sign up to our <a href="https://groups.google.com/d/forum/vprover">Mailing List</a> to receive updates about new releases and other news.</p>
+<p>
+We encourage users to sign up to our <a href="https://groups.google.com/d/forum/vprover">Mailing List</a> to receive updates about new releases and other news.
+</p>
 
 <section>
-<h1>Binaries</h1>
-<p>The binaries of the new Vampire can be downloaded and used under
-         the terms of the <a href="licence.html">Vampire License</a>. 
-All binaries are statically linked, which means that you should be able to run them out of the box.</p>
+<h2>Binaries</h2>
+<p>
+The binaries of the new Vampire can be downloaded and used under the terms of the <a href="licence.html">Vampire License</a>. 
+All binaries are statically linked, which means that you should be able to run them out of the box.
+</p>
 
-<p>Currently we're only providing binaries for Linux as this is the easy case. For other platforms (e.g. Mac), the easiest route is often to compile from source (see below). We can provide Mac binaries but these can be OS X version specific due to linking issues - please contact {{ reger }} for any queries.</p>
+<p>
+Currently we're only providing binaries for Linux as this is the easy case.
+For other platforms (e.g. Mac), the easiest route is often to compile from source (see below).
+We can provide Mac binaries but these can be OS X version specific due to linking issues &mdash; please contact {{ reger }} for any queries.
+</p>
 
-<p>We will usually provide each version with and without Z3 included as Z3 adds a lot to the size of the binary and is only useful in certain contexts. To be precise, if you are not reasoning with theories or want to make use of the most efficient finite model builder, then you can select the noz3 version. If there is an historic version that does not appear here that you want for whatever reason then please contact us.</p>
+<p>
+We will usually provide each version with and without Z3 included as Z3 adds a lot to the size of the binary and is only useful in certain contexts.
+To be precise, if you are not reasoning with theories or want to make use of the most efficient finite model builder, then you can select the no-Z3 version.
+If there is an historic version that does not appear here that you want for whatever reason then please contact us.
+</p>
+
 <ul>
  <li>Linux
   <ul>
@@ -29,19 +42,28 @@ All binaries are statically linked, which means that you should be able to run t
 </section>
 
 <section>
-<h1>Source</h1>
-<p>Please access the source via the <a href="https://github.com/vprover/vampire">GitHub</a> repository. 
-         The source of the new Vampire is provided under
-         the terms of the <a href="licence.html">Vampire License</a>. 
-
-<p>The README file should contain the necessary information for making. To build with Z3 you will need a statically linked Z3 binary. If you have any bug reports of feature requests then please use the <a href="https://github.com/vprover/vampire/issues">GitHub</a> functionality for this.</p>
+<h2>Source</h2>
 <p>
-         Below are some links to (stable) releases. <b>If you are going to use Vampire in experiments then please only use one of these stable versions and make sure you refer to the version</b> as this is the only way to guarantee reproducibility of your results.
+Please access the source via the <a href="https://github.com/vprover/vampire">GitHub</a> repository. 
+The source of the new Vampire is provided under the terms of the <a href="/licence.html">Vampire License</a>. 
+</p>
 
-<ul><li>Tagged releases:
-  <ul>
-           <li><a href="https://github.com/vprover/vampire/releases/tag/4.2.2">4.2.2</a>  
-           <li><a href="https://github.com/vprover/vampire/releases/tag/casc2016">4.1 (CASC 2016)</a>
-  </ul>
+<p>
+The README file should contain the necessary information for building with GNU Make.
+To build with Z3 you will need a statically linked Z3 binary.
+If you have any bug reports or feature requests then please use the <a href="https://github.com/vprover/vampire/issues">GitHub</a> functionality for this.
+</p>
+
+<p>
+Below are some links to (stable) releases.
+<strong>If you are going to use Vampire in experiments then please only use one of these stable versions and make sure you refer to the version</strong> as this is the only way to guarantee reproducibility of your results.
+</p>
+
 <ul>
+ <li>Tagged releases:
+ <ul>
+  <li><a href="https://github.com/vprover/vampire/releases/tag/4.2.2">4.2.2</a>  
+  <li><a href="https://github.com/vprover/vampire/releases/tag/casc2016">4.1 (CASC 2016)</a>
+ </ul>
+</ul>
 </section>

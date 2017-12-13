@@ -113,12 +113,12 @@ h1
 	font-size: $h1-size;
 }
 
-h2
+article h1, h2
 {
 	font-size: $h2-size;
 }
 
-section h1, h3
+section h2, h3
 {
 	font-size: $h3-size;
 	margin-bottom: $para-margin;
