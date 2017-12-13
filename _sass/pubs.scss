@@ -49,7 +49,7 @@ ol.pubs ul li a:after
 	content: ",";
 }
 
-ol.pubs ul li a:last-child:after
+ol.pubs ul li:last-child a:after
 {
 	content: ".";
 }

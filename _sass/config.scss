@@ -8,9 +8,11 @@ $highlight-color: #58d;
 
 $font: 'Roboto', sans-serif;
 $code-font: 'Source Code Pro', monospace;
-$title-margin: 50px;
+$title-margin: 30px;
 $para-margin: 20pt;
 $page-margin: 20px;
+$desktop-margin: 50px;
+$desktop-maxwidth: 1024px;
 $font-size: 12pt;
 $line-height: 20pt;
 $list-indent: 30px;
@@ -19,9 +21,11 @@ $h1-size: 36pt;
 $h2-size: 24pt;
 $h3-size: 18pt;
 
-$mugshot-width: 200px;
+$bio-padding: 25px;
+$mugshot-height: 150px;
 
 $nav-burgersize: 36pt;
 $nav-fontsize: 24pt;
-$nav-desktopsize: 12pt;
+$nav-desktopsize: 16pt;
+$nav-desktopwidth: 300px;
 $nav-padding: 10px;
