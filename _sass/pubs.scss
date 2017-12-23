@@ -8,11 +8,6 @@ ol.pubs
 	counter-reset: ref;
 }
 
-@counter-style bib
-{
-	system: extends decimal-leading-zero;
-}
-
 ol.pubs > li.year
 {
 	list-style: none;
@@ -28,7 +23,7 @@ ol.pubs > li.paper
 
 ol.pubs > li.paper:before
 {
-	content: "[" counter(ref, bib) "]";
+	content: "[" counter(ref, decimal-leading-zero) "]";
 }
 
 ol.pubs ul
