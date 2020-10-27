@@ -5,7 +5,7 @@ The website is hosted on GitHub pages, making some use of the Jekyll templating 
 Generally stuff is obvious: copy the style of whatever is there already, it's hard to break.
 
 # New Members
-It's nice to have you on the [team page](https://vprover.github.io)!
+It's nice to have you on the [team page](https://vprover.github.io/team.html)!
 This is a simple process:
  - put a photo of yourself in `img/`: preferably a thumbnail, square aspect works best
  - add your name to `_includes/authors.html` - this allows you to have a short-form name and a hyperlink to your personal page if you like
