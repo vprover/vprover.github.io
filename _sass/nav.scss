@@ -37,6 +37,12 @@ nav a
 	padding-bottom: $nav-padding;
 }
 
+nav img
+{
+	display: block;
+	margin: auto;
+}
+
 #nav-toggle:checked ~ a
 {
 	display: block;
